@@ -19,8 +19,8 @@
                     	<td>".$rs->email."</td>
                     	<td>".$rs->telefone."</td>
                     	<td><center>
-                    	<a href=\"\">[Alterar]</a>
-                    	<a href=\"\">[Excluir]</a>
+                    	<a href=\"?act=upd&id=" . $rs->id ."\">[Alterar]</a>
+                    	<a href=\"?act=del&id=". $rs->id ."\">[Excluir]</a>
                     	</center></td>";
                     echo "</tr>";
                 }
