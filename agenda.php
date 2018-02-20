@@ -64,6 +64,11 @@ require_once("banco.php");
 		<input type="submit" value="Salvar" class="btn btn-primary float-right mt-3"/>
 
 	</form>
+
+	<?php
+		include("tabela.php");
+	?>
+
 	</div>
 </body>
 </html>
