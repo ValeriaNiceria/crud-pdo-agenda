@@ -2,7 +2,7 @@
 
 require_once("verifica.php");
 
-require_once("conexao.php");
+require_once("banco.php");
 
 ?>
 
@@ -18,6 +18,12 @@ require_once("conexao.php");
 	<form action="?act=save" method="POST" name="form1">
 		<h1>Agenda de contatos</h1>
 		<hr/>
+		
+		<?php
+			echo (isset($mensagem_success) ? "<div class='alert alert-success'>" . $mensagem_success . "</div>" : "");
+			echo (isset($mensagem_erro) ? "<div class='alert alert-danger'>" . $mensagem_erro . "</div>" : "");
+		?>
+
 		<input type="hidden" name="id"
 		<?php
 			//Preenche o id no campo id com o valor
