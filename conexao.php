@@ -11,7 +11,7 @@ try {
 	$conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	//Informa ao servidor de banco de dados, que será utilizada palavras com acento
-	$conexao->exec("set name utf-8");
+	$conexao->exec("SET NAMES 'utf8'");
 	
 }catch(PDOException $erro) {
 	echo "Erro na conexão: " . $erro->getMessage();
